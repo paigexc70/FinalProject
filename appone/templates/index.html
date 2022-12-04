@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimationFanForum</title>
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    
+</head>
+<body>
+    <header>
+        <!--Search-->
+        <div class="search-box">
+            <div>
+                <select name="" id="">
+                    <option value="Everything">Everything</option>
+                    <option value="Titles">Titles</option>
+                    <option value="Descriptions">Descriptions</option>
+                </select>
+                <input type="text" name="" placeholder="search">
+                <button><i class="search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class = "subforum">
+            <div class="subforumtitle">
+            <h1>Animation  Appreciation</h1>
+        </div>
+
+
+        <!--Futurama-->
+        <div class="subforumrow">
+            <div class="subforumicon subforumcolumn">
+                <i class="fa-light fa-rocket-launch"></i>
+            </div>
+            <div class="subforuminfo subforumcolumn">
+            <h2><a href="fpost.html">Futurama</a></h2>
+            <p>Discuss all things related to Futurama </p>
+        </div>
+        <div class="subforumstat subforumcolumn">
+            <span>20 Post</span>
+        </div>
+        <div class="subforuminfo subforumcolumn">
+             <b><a href=""> Last Post:</a></b> by <a href="">User</a>
+             <br>
+             <small>date</small>
+        </div>
+    </div>  
+    <hr class="divide">
+
+    <!--Bob'sBurgers-->
+    <div class="container">
+        <div class = "subforum">
+            <div class="subforumtitle">
+        </div>
+
+        <div class="subforumrow">
+            <div class="subforumicon subforumcolumn center">
+                
+            </div>
+            <div class="subforuminfo subforumcolumn">
+            <h3><a href="">Bob's Burgers</a></h3>
+            <p>Discuss all things related to Bob's Burgers </p>
+        </div>
+        <div class="subforumstat subforumcolumn center">
+            <span>20 Post</span>
+        </div>
+        <div class="subforuminfo subforumcolumn">
+             <b><a href=""> Last Post:</a></b> by <a href="">User</a>
+             <br>
+             <small>date</small>
+        </div>
+    </div> 
+    <hr class="divide">
+
+    <!--Bojack-->
+    <div class="container">
+        <div class = "subforum">
+            <div class="subforumtitle">
+        </div>
+
+        <div class="subforumrow">
+            <div class="subforumicon subforumcolumn center">
+                <i class="tvicon"></i>
+            </div>
+            <div class="subforuminfo subforumcolumn">
+            <h4><a href="">Bojack Horseman</a></h4>
+            <p>Discuss all things related to Bojack Horseman</p>
+        </div>
+        <div class="subforumstat subforumcolumn center">
+            <span>20 Post</span>
+        </div>
+        <div class="subforuminfo subforumcolumn">
+             <b><a href=""> Last Post:</a></b> by <a href="">User</a>
+             <br>
+             <small>date</small>
+        </div>
+    </div> 
+    <hr class="divide">
+    
+<script src="{% static 'main.js' %}"></script>
+<script src="https://kit.fontawesome.com/522f7806bb.js" crossorigin="anonymous"></script>
+<footer>Paige Dyer | Web And Distributed Programming</footer>    
+
+
+</body>
+</html>

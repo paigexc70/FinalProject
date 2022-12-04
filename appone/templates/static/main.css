@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+   
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(0, 183, 255, 0.63);
+    color: black;
+}
+
+a{
+    color: rgba(8, 47, 223, 0.685);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration-line: underline;
+  
+}
+
+h2{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+h3{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+h4{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.container{
+    margin: 5px;
+    padding: 5px;
+}
+
+.subforum{
+    margin-top: 2px;
+}
+
+.subforumtitle{
+    padding: 5px;
+    border-radius: 5px;
+    margin: 4px;
+}
+
+.subforuminfo *{
+    margin-block: 0;
+}
+
+.subforumrow{
+    display: grid;
+    grid-template-columns: 10% 60% 20% 10%;
+}
+
+.subforumcolumn{
+    padding: 2px;
+    margin: 2px;
+    border-radius: 2px;
+    background-color:white;
+}
+
+center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    margin-inline: 10px;
+    
+}
+
+
+.hide{
+    display: none;
+}
+
+.baricon{
+    font-size: 60px;
+    display: inline-block;
+    margin-right: 10px;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+.brand{
+    font-size: 60px;
+    display: inline-block;
+}
+
+.search-box{
+    border: solid 5px purple;
+    width: 40%;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-box select{
+    padding: 10px;
+}
+
+.search-box input{
+    padding: 10px;
+}
+
+.search-box button{
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
+footer{
+    margin-top: 60px;
+    padding: 20px;
+    display: block;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+
+
+

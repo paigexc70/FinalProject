@@ -1,0 +1,84 @@
+navbar{
+    display: inline-block;
+    align-items: center;
+    
+}
+
+.navigation{
+    background-color: rgb(61, 43, 226);
+    padding: 10px;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.navlist{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.navitem a{
+   
+    text-align: left;
+    margin-inline: 5px;
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+}
+
+.navitem a:hover{
+    background-color: rgb(127, 187, 255);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(0, 183, 255, 0.63);
+    color: black;
+}
+
+a{
+    color: rgba(8, 47, 223, 0.685);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.container{
+    margin: 5px;
+    padding: 5px;
+}
+
+.subforum{
+    margin-top: 2px;
+}
+
+.subforumtitle{
+    padding: 5px;
+    border-radius: 5px;
+    margin: 4px;
+}
+
+.subforuminfo *{
+    margin-block: 0;
+}
+
+.subforumrow{
+    display: grid;
+    grid-template-columns: 10% 60% 20% 10%;
+}
+
+.subforumcolumn{
+    padding: 2px;
+    margin: 2px;
+    border-radius: 2px;
+    background-color:white;
+}
