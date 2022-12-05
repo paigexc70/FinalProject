@@ -1,4 +1,4 @@
 function myFunction() {
-    alert("Hello from a static file!");
+    alert("Welcome to my project!");
   }
   
