@@ -1,9 +1,8 @@
 from django.urls import path
-from .views import index, fpost
-
+from . import views
 urlpatterns = [
-    path('', index, name="home"),
-    path('fpost/', fpost, name="fpost"),
+    path('', views.index, name="home"),
+    path('fpost/', views.fpost, name="fpost"),
  
  
   
