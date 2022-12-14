@@ -8,4 +8,6 @@ def fpost(request):
 
 def fdetail(request):
     return render (request, 'fdetail.html', {})
+
+
     

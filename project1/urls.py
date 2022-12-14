@@ -18,6 +18,9 @@ from django.contrib.auth import views as auth_views
 from django.urls import path, include
 from project1.views import home
 from register import views as reg_views
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,4 +29,5 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(template_name='templates/logout.html'), name='logout'),
     path('', include('appone.urls')),
     path('', home),
-]
+    path('profile/', reg_views.profile, name='profile'),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

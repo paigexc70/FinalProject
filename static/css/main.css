@@ -81,46 +81,6 @@ header{
 }
 
 
-.hide{
-    display: none;
-}
-
-.baricon{
-    font-size: 60px;
-    display: inline-block;
-    margin-right: 10px;
-    color: antiquewhite;
-    cursor: pointer;
-}
-
-.brand{
-    font-size: 60px;
-    display: inline-block;
-}
-
-.search-box{
-    border: solid 5px purple;
-    width: 40%;
-    margin-top: 20px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.search-box select{
-    padding: 10px;
-}
-
-.search-box input{
-    padding: 10px;
-}
-
-.search-box button{
-    padding: 10px;
-    background-color: white;
-    color: black;
-}
-
 footer{
     margin-top: 60px;
     padding: 20px;
