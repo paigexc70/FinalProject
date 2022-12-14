@@ -16,15 +16,9 @@
 
     <header>
         <!--Search-->
-        <div class="search-box">
+        <div class="login">
             <div>
-                <select name="" id="">
-                    <option value="Everything">Everything</option>
-                    <option value="Titles">Titles</option>
-                    <option value="Descriptions">Descriptions</option>
-                </select>
-                <input type="text" name="" placeholder="search">
-                <button><i class="search"></i></button>
+                <a href="{% url 'register' %}">Sign Up</a>
             </div>
         </div>
     </header>
@@ -42,7 +36,7 @@
                 <i class="fa-light fa-rocket-launch"></i>
             </div>
             <div class="subforuminfo subforumcolumn">
-            <h2><a href="fpost.html">Futurama</a></h2>
+            <h2><a href="{% url 'fpost' %}">Futurama</a></h2>
             <p>Discuss all things related to Futurama </p>
         </div>
         <div class="subforumstat subforumcolumn">
