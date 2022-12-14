@@ -6,8 +6,6 @@ def index(request):
 def fpost(request):
     return render (request, 'fpost.html', {})
 
-def fdetail(request):
-    return render (request, 'fdetail.html', {})
 
 
     
