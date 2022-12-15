@@ -23,57 +23,6 @@ h1{
   
 }
 
-h2{
-    font-weight: bolder;
-    font-size: 20px;
-}
-
-h3{
-    font-weight: bolder;
-    font-size: 20px;
-}
-
-h4{
-    font-weight: bolder;
-    font-size: 20px;
-}
-
-.container{
-    margin: 5px;
-    padding: 5px;
-}
-
-.subforum{
-    margin-top: 2px;
-}
-
-.subforumtitle{
-    padding: 5px;
-    border-radius: 5px;
-    margin: 4px;
-}
-
-.subforuminfo *{
-    margin-block: 0;
-}
-
-.subforumrow{
-    display: grid;
-    grid-template-columns: 10% 60% 20% 10%;
-}
-
-.subforumcolumn{
-    padding: 2px;
-    margin: 2px;
-    border-radius: 2px;
-    background-color:white;
-}
-
-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 header{
     margin-inline: 10px;

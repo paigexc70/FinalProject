@@ -41,77 +41,12 @@
             <div class="subforumtitle">
             <h1>Animation  Appreciation</h1>
         </div>
-
-
-        <!--Futurama-->
-        <div class="subforumrow">
-            <div class="subforumicon subforumcolumn">
-                
-            </div>
-            <div class="subforuminfo subforumcolumn">
-            <h2><a href="{% url 'fpost' %}">Futurama</a></h2>
-            <p>Discuss all things related to Futurama </p>
-        </div>
-        <div class="subforumstat subforumcolumn">
-            <span>20 Post</span>
-        </div>
-        <div class="subforuminfo subforumcolumn">
-             <b><a href=""> Last Post:</a></b> by <a href="">User</a>
-             <br>
-             <small>date</small>
-        </div>
-    </div>  
-    <hr class="divide">
-
-    <!--Bob'sBurgers-->
-    <div class="container">
-        <div class = "subforum">
-            <div class="subforumtitle">
-        </div>
-
-        <div class="subforumrow">
-            <div class="subforumicon subforumcolumn center">
-                
-            </div>
-            <div class="subforuminfo subforumcolumn">
-            <h3><a href="">Bob's Burgers</a></h3>
-            <p>Discuss all things related to Bob's Burgers </p>
-        </div>
-        <div class="subforumstat subforumcolumn center">
-            <span>20 Post</span>
-        </div>
-        <div class="subforuminfo subforumcolumn">
-             <b><a href=""> Last Post:</a></b> by <a href="">User</a>
-             <br>
-             <small>date</small>
-        </div>
-    </div> 
-    <hr class="divide">
-
-    <!--Bojack-->
-    <div class="container">
-        <div class = "subforum">
-            <div class="subforumtitle">
-        </div>
-
-        <div class="subforumrow">
-            <div class="subforumicon subforumcolumn center">
-                <i class="tvicon"></i>
-            </div>
-            <div class="subforuminfo subforumcolumn">
-            <h4><a href="">Bojack Horseman</a></h4>
-            <p>Discuss all things related to Bojack Horseman</p>
-        </div>
-        <div class="subforumstat subforumcolumn center">
-            <span>20 Post</span>
-        </div>
-        <div class="subforuminfo subforumcolumn">
-             <b><a href=""> Last Post:</a></b> by <a href="">User</a>
-             <br>
-             <small>date</small>
-        </div>
-    </div> 
-    <hr class="divide">
+    <ul>    
+    {% for post in object_list %}
+        <li><a href="{% url 'fpost' post.pk %}">{{ post.title }} - {{ post.author}}<br/>
+        {{ post.body }}</li>
+    {% endfor %}</ul>
+       
     
 <script src="{% static 'js/main.js' %}"></script>
 
