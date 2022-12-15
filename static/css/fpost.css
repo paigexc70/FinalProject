@@ -33,9 +33,6 @@ navbar{
     background-color: rgb(127, 187, 255);
 }
 
-*{
-    box-sizing: border-box;
-}
 
 html{
     font-size: 14px;
@@ -56,28 +53,4 @@ h1{
     text-align: center;
 }
 
-.subforum{
-    margin-top: 2px;
-}
 
-.subforumtitle{
-    padding: 5px;
-    border-radius: 5px;
-    margin: 4px;
-}
-
-.subforuminfo *{
-    margin-block: 0;
-}
-
-.subforumrow{
-    display: grid;
-    grid-template-columns: 10% 60% 20% 10%;
-}
-
-.subforumcolumn{
-    padding: 2px;
-    margin: 2px;
-    border-radius: 2px;
-    background-color:white;
-}

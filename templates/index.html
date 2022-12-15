@@ -1,56 +1,17 @@
+{% extends 'base.html'%}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnimationFanForum</title>
-    
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
-    
-</head>
-<body>
 
-    <button onclick="myFunction()">Instructions</button>
 
-    <header>
-        <!--Search-->
-        <div class="navbar">
-            <div>
-                <nav>
-                    <ul>
-                     {% if user.is_authenticated %}
-                     <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
-                     {% else %}
-                        <a class="nav-item nav-link" href="{% url 'register' %}">Sign Up</a>
-                        <br></br>
-                        <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
-                     {% endif %}
-                     {% if user.is_authenticated %}
-                        <a class="nav-item nav-link" href="{% url 'profile' %}">Profile</a>
-                     {% endif %}
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+    {% block content %}
 
-    <div class="container">
-        <div class = "subforum">
-            <div class="subforumtitle">
-            <h1>Animation  Appreciation</h1>
-        </div>
+    <h2>Post</h2>
     <ul>    
     {% for post in object_list %}
         <li><a href="{% url 'fpost' post.pk %}">{{ post.title }} - {{ post.author}}<br/>
         {{ post.body }}</li>
     {% endfor %}</ul>
        
-    
-<script src="{% static 'js/main.js' %}"></script>
-
-<footer>Paige Dyer | Web And Distributed Programming</footer>    
+    {% endblock %}   
 
 
 </body>
