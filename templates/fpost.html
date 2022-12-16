@@ -18,15 +18,27 @@
                         <a href="{% url 'main' %}">Homepage</a>
                     </li> 
                     <li class="navitem">
-                        <a href="{% url 'add_post' %}">Add Post</a>
+                        <a href="{% url 'addpost' %}">Add Post</a>
                     </li>
                 </ul>
             </nav> 
         </header>
    
+Current User: {{user.id}}
+<br/><br>
+Post Author: {{post.author.id}}
+<h1>{{post.title}} - {{post.author.id}}</h1>  
+<small>By: {{post.author}} - </small><br/>
 
-<h1>{{post.title}}</h1>  
-<small>By: {{post.author}}</small><br/>
+{% if user.is_authenticated %}
+        {% if user.id == post.author.id%}
+            <a href="{% url 'updateview' post.pk %}">Edit</a>
+
+            <a href="{% url 'deleteview' post.pk %}">Delete</a>  
+        {% endif %}
+{% endif %} 
+    
+
 <hr>
 <br/>
 {{post.body}}

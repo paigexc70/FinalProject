@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'hitcount',
     'tinymce',
     'crispy_forms',
+    
 ]
 
 MIDDLEWARE = [

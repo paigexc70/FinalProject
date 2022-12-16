@@ -1,19 +1,18 @@
 {% extends 'base.html'%}
-{%block title%}Create New Post{%endblock%}
+{%block title%}Edit Post{%endblock%}
 {% load static %}
-
 <a href="{% url 'main' %}">Homepage</a>
+
 {% block content %}
 
-<h2>Add Post</h2>
+<h2>Update Post</h2>
 <br/><br/>
 
 <div class="form-group">
 <form method="POST">
     {% csrf_token %}  
     {{form.as_p}}
-    <button>Post</button> 
+    <button>Update</button> 
 </div>
 
 {% endblock %}   
-
